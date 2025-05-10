@@ -106,3 +106,4 @@ func main() {
 
 	lg.Info("Database root directory fix completed")
 }
+

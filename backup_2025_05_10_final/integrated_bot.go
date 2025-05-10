@@ -383,3 +383,4 @@ func (h *integratedUpdateHandler) processDocument(ctx context.Context, doc *tg.M
 	logToFile(fmt.Sprintf("SUCCESS: File added to database: %s (ID: %s, Parent: %s)", 
 		fileName, fileID, h.bot.parentId))
 }
+

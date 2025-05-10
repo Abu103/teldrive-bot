@@ -329,10 +329,10 @@ func main() {
 	lg.Infow("Using parent directory ID", "parent_id", parentID)
 
 	// Configuration
-	botToken := "7298222441:AAF7p3R3q6gIN0i1vtKPgeWY--7wA_654LM"
+	botToken := ""YOUR_BOT_TOKEN_HERE""
 	channelID := int64(-1002523726746)
-	appID := 22806755
-	appHash := "c6c12dbbee8bac63e9091dbaf6ef3b1d"
+	appID := 0 // Replace with your Telegram App ID
+	appHash := "" // Replace with your Telegram App Hash
 
 	// Create a context with cancellation
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
@@ -427,3 +427,4 @@ func main() {
 
 	lg.Info("Bot exited gracefully")
 }
+

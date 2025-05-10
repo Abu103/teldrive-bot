@@ -119,3 +119,4 @@ func main() {
 		lg.Info("Auto-categorization completed.")
 	}
 }
+

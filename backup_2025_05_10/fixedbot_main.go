@@ -327,7 +327,7 @@ func main() {
 	lg.Infow("Using parent directory ID", "parent_id", parentID)
 
 	// Configuration
-	botToken := "7298222441:AAF7p3R3q6gIN0i1vtKPgeWY--7wA_654LM"
+	botToken := ""YOUR_BOT_TOKEN_HERE""
 	channelID := int64(-1002523726746)
 
 	// Database connection string
@@ -410,3 +410,4 @@ func main() {
 		lg.Fatalw("Bot error", "error", err)
 	}
 }
+

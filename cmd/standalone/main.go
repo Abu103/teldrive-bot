@@ -22,13 +22,13 @@ func main() {
 	defer lg.Sync()
 
 	// Configuration
-	botToken := "7298222441:AAF7p3R3q6gIN0i1vtKPgeWY--7wA_654LM"
+	botToken := ""YOUR_BOT_TOKEN_HERE""
 	channelID := int64(-1002523726746)
 
 	// Create TG config
 	tgConfig := &config.TGConfig{
-		AppId:   22806755,
-		AppHash: "c6c12dbbee8bac63e9091dbaf6ef3b1d",
+		AppId: 0, // Replace with your Telegram App ID,
+		AppHash: "", // Replace with your Telegram App Hash,
 	}
 
 	// Create a context that will be canceled on SIGINT or SIGTERM
@@ -71,3 +71,4 @@ func main() {
 
 	lg.Info("Bot exited gracefully")
 }
+

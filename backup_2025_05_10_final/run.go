@@ -253,3 +253,4 @@ func setupServer(cfg *config.ServerCmdConfig, db *gorm.DB, cache cache.Cacher, l
 		IdleTimeout:       60 * time.Second,
 	}
 }
+

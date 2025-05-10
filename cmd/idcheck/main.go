@@ -13,9 +13,9 @@ import (
 
 func main() {
 	// Configuration - use your bot token
-	botToken := "8097661408:AAHPpOOXMTHuXsbUuQUAZ6QmUFwT4eHelUE"
-	appID := 22806755
-	appHash := "c6c12dbbee8bac63e9091dbaf6ef3b1d"
+	botToken := ""YOUR_BOT_TOKEN_HERE""
+	appID := 0 // Replace with your Telegram App ID
+	appHash := "" // Replace with your Telegram App Hash
 
 	// Create a context with timeout
 	ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
@@ -129,3 +129,4 @@ func main() {
 
 	fmt.Println("ID check completed successfully")
 }
+
