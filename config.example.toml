@@ -1,0 +1,45 @@
+[db]
+# Example database connection string (replace with your actual credentials)
+data-source = "postgresql://postgres.example:YourPassword@example.pooler.supabase.com:6543/postgres"
+# Disable prepared statements to avoid conflicts with PostgreSQL
+prepare-stmt = false
+log-level = "info"
+
+[server]
+port = 8080
+read-timeout = "1h"
+write-timeout = "1h"
+graceful-shutdown = "10s"
+
+[db.pool]
+enable = true
+max-open-connections = 25
+max-idle-connections = 10
+max-lifetime = "10m"
+
+[jwt]
+allowed-users = ["your_username"]
+secret = "your_jwt_secret_here"
+session-time = "720h" 
+
+[tg]
+rate-limit = true
+rate = 100
+rate-burst = 5
+pool-size = 8
+reconnect-timeout = "5m"
+app-id = 12345678
+app-hash = "your_app_hash_here"
+upload_chat = 1234567890
+
+[tg.uploads]
+encryption-key = ""
+
+[log]
+level = "debug"
+
+[bot]
+bot-token = "your_bot_token_here"
+channel-id = 1234567890
+parent-id = "your_parent_folder_id_here"
+enabled = true
